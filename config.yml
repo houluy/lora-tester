@@ -1,0 +1,42 @@
+host: localhost
+target:
+    simple: 10000
+    full: 12234
+test_file: test_data/lora_test_data.xlsx
+test_cases:
+    pull:
+        start:
+            col: A
+            row: 2
+        end:
+            col: F
+            row: 17
+            end_row: 17
+    push:
+        start:
+            col: A
+            row: 20
+        end:
+            col: M
+            row: 20
+            end_row: 53
+    join:
+        start:
+            col: A
+            row: 57
+        end:
+            col: J
+            row: 57
+            end_row: 84
+key:
+    AppKey: 87ec811eb1b26c3687ec811eb1b26c36
+    NwkSKey: 2a7d8497891fdc6f64590fcb32030db4 
+    AppSKey: 4bfe11656b6b6871f50c1dda3de5cee7
+log_config:
+    connector: /home/houlu/lora/log/lora-network-connector.log
+    connector_error: /home/houlu/lora/log/lora-network-connector-ERROR.log
+    server: /home/houlu/lora/log/lora-network-server.log
+    join: /home/houlu/lora/log/lora-join-server.log
+    join_error: /home/houlu/lora/log/lora-join-server/ERROR.log
+    application: /home/houlu/lora/log/lora-application-server.log
+    simple: /home/houlu/lora/log/lora-simple-server.log
